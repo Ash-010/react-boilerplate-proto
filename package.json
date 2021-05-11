@@ -1,0 +1,34 @@
+{
+  "name": "react-boilerplate-proto",
+  "version": "1.0.0",
+  "description": "Basic boilerplate code for React",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npm run build-server && npm run build-client",
+    "build-server": "babel src/server --out-dir ./dist",
+    "build-client": "babel src/client --copy-files --out-dir ./dist/public",
+    "start": "node ./dist/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ash-010/react-boilerplate-proto.git"
+  },
+  "keywords": [
+    "Node",
+    "React"
+  ],
+  "author": "Ashish Poojary",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ash-010/react-boilerplate-proto/issues"
+  },
+  "homepage": "https://github.com/Ash-010/react-boilerplate-proto#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0"
+  }
+}
